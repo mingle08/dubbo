@@ -17,10 +17,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.dubbo</groupId>
+        <groupId>com.alibaba</groupId>
         <artifactId>dubbo-parent</artifactId>
-        <version>${revision}</version>
-        <relativePath>../pom.xml</relativePath>
+        <version>2.6.13-SNAPSHOT</version>
     </parent>
     <artifactId>dubbo-filter</artifactId>
     <packaging>pom</packaging>
@@ -33,13 +32,4 @@
         <module>dubbo-filter-cache</module>
         <module>dubbo-filter-validation</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-test-check</artifactId>
-            <version>${project.parent.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 </project>

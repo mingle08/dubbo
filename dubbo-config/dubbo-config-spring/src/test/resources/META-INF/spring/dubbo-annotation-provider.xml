@@ -22,7 +22,7 @@
     ">
 
     <!-- 当前应用信息配置 -->
-    <dubbo:application name="dubbo-annotation-test"/>
+    <dubbo:application name="dubbo-annotation-provider"/>
 
     <!-- 连接注册中心配置 -->
     <dubbo:registry id="my-registry" address="N/A"/>
@@ -30,11 +30,11 @@
     <dubbo:protocol name="dubbo" port="12345"/>
 
     <!-- Annotation 注册 -->
-    <dubbo:annotation id="doubleServiceAnnotationPostProcessor"
-                      package="org.apache.dubbo.config.spring.context.com.alibaba.dubbo.config.annotation.provider ,
-             org.apache.dubbo.config.spring.context.com.alibaba.dubbo.config.annotation.provider"/>
+    <dubbo:annotation id="doubleServiceAnnotationBeanPostProcessor"
+                      package="com.alibaba.dubbo.config.spring.context.annotation.provider ,
+             com.alibaba.dubbo.config.spring.context.annotation.provider"/>
 
-    <dubbo:annotation id="emptyServiceAnnotationPostProcessor"
+    <dubbo:annotation id="emptyServiceAnnotationBeanPostProcessor"
                       package="    "/>
 
 </beans>
