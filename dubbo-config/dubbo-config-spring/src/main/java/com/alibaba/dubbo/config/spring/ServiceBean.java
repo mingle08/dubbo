@@ -46,7 +46,11 @@ import java.util.Map;
 import static com.alibaba.dubbo.config.spring.util.BeanFactoryUtils.addApplicationListener;
 
 /**
- * ServiceFactoryBean
+ * ServiceBean
+ * 实现了接口InitializingBean，会执行方法afterPropertiesSet
+ * 实现了ApplicationListener接口，会执行方法onApplicationEvent
+ * 先执行afterPropertiesSet  容器中bean初始化之后执行
+ * 后执行onApplicationEvent  容器中所有bean完毕，刷新时执行
  *
  * @export
  */
